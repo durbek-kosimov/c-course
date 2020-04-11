@@ -11,10 +11,13 @@ int main()
             "The tokens are:");
 
     tokenPtr = strtok(string, " ");
-
+    printf("%d\n", strlen(tokenPtr));
     while (tokenPtr != NULL) {
-        printf("%s\n", tokenPtr);
+        printf("%s\n", strcat(tokenPtr, "  "));
+//        printf("%s\n", tokenPtr);
+        printf("%d\n", strlen(tokenPtr));
         tokenPtr = strtok(NULL, " ");
+        printf("%s\n", tokenPtr);
     }
 
     return 0;
